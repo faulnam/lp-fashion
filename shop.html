@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFA - Toko & Katalog Furnitur</title>
+  <meta name="description"
+    content="Temukan berbagai koleksi kursi, meja, sofa, dan dekorasi hunian berkualitas tinggi di FIFA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Invisible SVG filter for removing image backgrounds -->
+  <svg width="0" height="0" style="position: absolute; pointer-events: none;">
+    <filter id="remove-white-bg" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="
+        1 0 0 0 0
+        0 1 0 0 0
+        0 0 1 0 0
+        -2.5 -2.5 -2.5 6 -0.5" />
+    </filter>
+  </svg>
+
+  <!-- Main Canvas Frame Container -->
+  <div class="page-canvas">
+
+    <!-- 1. NAVBAR -->
+    <header class="navbar" id="navbar">
+      <div class="nav-logo">
+        <a href="index.html" class="nav-logo-link">
+          <div class="logo-mark">
+            <span class="mark-bar bar-1"></span>
+            <span class="mark-bar bar-2"></span>
+            <span class="mark-bar bar-3"></span>
+            <span class="mark-bar bar-4"></span>
+          </div>
+          <span class="logo-text">FIFA</span>
+        </a>
+      </div>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Beranda</a>
+        <a href="shop.html" class="nav-link active">Toko</a>
+        <a href="collection.html" class="nav-link">Koleksi</a>
+        <a href="#" class="nav-link">Tentang Kami</a>
+        <a href="#" class="nav-link">Hubungi Kami</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="wishlist.html" class="icon-btn wishlist-btn" id="wishlist-btn" aria-label="Favorit">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+            </path>
+          </svg>
+        </a>
+
+        <div class="cart-wrapper">
+          <button class="icon-btn cart-btn" id="cart-btn" aria-label="Keranjang">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+          </button>
+          <span class="notification-badge">3</span>
+        </div>
+
+        <button class="login-btn" id="login-btn">Masuk</button>
+      </div>
+    </header>
+
+    <!-- 2. SHOP BENTO GRID -->
+    <main class="hero-bento shop-bento" id="shop-bento">
+
+      <!-- ===== BENTO ROW 1: HEADER & FILTERS ===== -->
+      <div class="bento-row shop-row-1">
+        
+        <!-- CARD A: Shop Main Banner -->
+        <div class="bento-card shop-banner-card">
+          <div class="shop-banner-content">
+            <h1 class="shop-banner-title">Katalog Furnitur FIFA</h1>
+            <p class="shop-banner-subtitle">Temukan koleksi furnitur impian dengan keanggunan, kenyamanan, dan kualitas terbaik.</p>
+            <div class="search-bar shop-search-bar">
+              <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748B"
+                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" placeholder="Cari barang atau nama furnitur...">
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD B: Category Filters Card -->
+        <div class="bento-card category-filter-card">
+          <h2 class="filter-card-title">Kategori Produk</h2>
+          <div class="category-pills">
+            <button class="pill-btn active">Semua</button>
+            <button class="pill-btn">Sofa & Armchair</button>
+            <button class="pill-btn">Meja Makan</button>
+            <button class="pill-btn">Kursi Santai</button>
+            <button class="pill-btn">Lampu & Dekorasi</button>
+          </div>
+        </div>
+
+        <!-- CARD C: Promo Offer Banner Card -->
+        <div class="bento-card shop-promo-card">
+          <span class="shop-promo-tag">PROMO SPESIAL</span>
+          <h3 class="shop-promo-title">Diskon Akhir Pekan Hingga 20%</h3>
+          <span class="shop-promo-code">Kode: <strong>FIFA20</strong></span>
+        </div>
+
+      </div>
+
+      <!-- ===== BENTO ROW 2: CATALOGUE PRODUCTS GRID ===== -->
+      <div class="shop-products-grid">
+        
+        <!-- Product 1 -->
+        <div class="bento-card product-card shop-product-item">
+          <span class="product-badge">Terlaris</span>
+          <button class="wish-icon-btn" aria-label="Simpan">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <div class="product-img-box">
+            <img src="assets/lounge_chair.png" alt="Kursi Santai Skandinavia" class="transparent-bg-img">
+          </div>
+          <div class="product-info">
+            <div class="product-text">
+              <div class="product-meta"><span class="rating">⭐ 4.9</span> <span class="dot">•</span> <span class="cat">Kursi</span></div>
+              <h3 class="product-name">Kursi Santai Skandinavia</h3>
+              <span class="product-price">$299.00</span>
+            </div>
+            <button class="add-btn" aria-label="Tambah ke Keranjang">+</button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="bento-card product-card shop-product-item">
+          <span class="product-badge badge-sale">Diskon 15%</span>
+          <button class="wish-icon-btn" aria-label="Simpan">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <div class="product-img-box">
+            <img src="assets/sofa_3seater.png" alt="Sofa 3-Dudukan – Cloud Grey" class="transparent-bg-img">
+          </div>
+          <div class="product-info">
+            <div class="product-text">
+              <div class="product-meta"><span class="rating">⭐ 4.8</span> <span class="dot">•</span> <span class="cat">Sofa</span></div>
+              <h3 class="product-name">Sofa 3-Dudukan – Cloud Grey</h3>
+              <span class="product-price">$899.00</span>
+            </div>
+            <button class="add-btn" aria-label="Tambah ke Keranjang">+</button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="bento-card product-card shop-product-item">
+          <span class="product-badge">Populer</span>
+          <button class="wish-icon-btn" aria-label="Simpan">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <div class="product-img-box">
+            <img src="assets/promo_armchair.png" alt="Armchair Accent Khaki" class="transparent-bg-img">
+          </div>
+          <div class="product-info">
+            <div class="product-text">
+              <div class="product-meta"><span class="rating">⭐ 4.9</span> <span class="dot">•</span> <span class="cat">Armchair</span></div>
+              <h3 class="product-name">Armchair Accent Khaki</h3>
+              <span class="product-price">$399.00</span>
+            </div>
+            <button class="add-btn" aria-label="Tambah ke Keranjang">+</button>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="bento-card product-card shop-product-item">
+          <span class="product-badge">Set Meja</span>
+          <button class="wish-icon-btn" aria-label="Simpan">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <div class="product-img-box">
+            <img src="assets/dining_room.png" alt="Set Meja Makan Kayu Minimalis" style="object-fit: cover; border-radius: 12px;">
+          </div>
+          <div class="product-info">
+            <div class="product-text">
+              <div class="product-meta"><span class="rating">⭐ 4.7</span> <span class="dot">•</span> <span class="cat">Meja Makan</span></div>
+              <h3 class="product-name">Set Meja Makan Minimalis</h3>
+              <span class="product-price">$549.00</span>
+            </div>
+            <button class="add-btn" aria-label="Tambah ke Keranjang">+</button>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="bento-card product-card shop-product-item">
+          <span class="product-badge">Baru</span>
+          <button class="wish-icon-btn" aria-label="Simpan">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <div class="product-img-box">
+            <img src="assets/lounge_chair.png" alt="Kursi Modern Velvet" class="transparent-bg-img">
+          </div>
+          <div class="product-info">
+            <div class="product-text">
+              <div class="product-meta"><span class="rating">⭐ 4.9</span> <span class="dot">•</span> <span class="cat">Kursi</span></div>
+              <h3 class="product-name">Kursi Modern Velvet</h3>
+              <span class="product-price">$279.00</span>
+            </div>
+            <button class="add-btn" aria-label="Tambah ke Keranjang">+</button>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="bento-card product-card shop-product-item">
+          <span class="product-badge badge-sale">Diskon 20%</span>
+          <button class="wish-icon-btn" aria-label="Simpan">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </button>
+          <div class="product-img-box">
+            <img src="assets/sofa_3seater.png" alt="Sofa Sudut Premium" class="transparent-bg-img">
+          </div>
+          <div class="product-info">
+            <div class="product-text">
+              <div class="product-meta"><span class="rating">⭐ 4.9</span> <span class="dot">•</span> <span class="cat">Sofa</span></div>
+              <h3 class="product-name">Sofa Sudut Premium</h3>
+              <span class="product-price">$949.00</span>
+            </div>
+            <button class="add-btn" aria-label="Tambah ke Keranjang">+</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===== BENTO ROW 3: PAGINATION ===== -->
+      <div class="bento-card shop-pagination-card">
+        <span class="pagination-info">Menampilkan 6 dari 24 produk</span>
+        <div class="pagination-btn-group">
+          <button class="page-num active">1</button>
+          <button class="page-num">2</button>
+          <button class="page-num">3</button>
+          <button class="page-next">Berikutnya &gt;</button>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="wishlist.js"></script>
+  <script src="shop.js"></script>
+</body>
+
+</html>
