@@ -37,6 +37,12 @@
   --grid-gap: 16px;
 }
 
+html {
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--font-family);
   background-color: #E8E1D7;
@@ -63,6 +69,7 @@ body {
   padding: 16px 20px 24px 20px;
   box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* ==========================================================================
@@ -675,7 +682,7 @@ body {
 
 .testimonials-row {
   display: flex;
-  gap: var(--grid-gap);
+  gap: 10px;
   height: 224px;
   min-width: 0;
 }
@@ -686,7 +693,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 14px 16px;
+  padding: 10px 12px;
   border-radius: var(--radius-card);
   min-width: 0;
   overflow: hidden;
@@ -823,7 +830,7 @@ body {
 /* Store & Contact Side-by-Side Row (Bottom) */
 .store-contact-row {
   display: flex;
-  gap: var(--grid-gap);
+  gap: 10px;
   height: 159px;
   min-width: 0;
 }
@@ -837,8 +844,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 12px 14px;
+  gap: 6px;
+  padding: 8px 10px;
   text-align: center;
   border-radius: var(--radius-card);
   transition: transform 0.2s ease;
@@ -851,8 +858,8 @@ body {
 }
 
 .pin-circle {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background-color: #000000;
   display: flex;
@@ -861,7 +868,7 @@ body {
 }
 
 .store-title {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 800;
   color: var(--text-dark);
   line-height: 1.2;
@@ -874,7 +881,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 12px 14px;
+  padding: 8px 10px;
   border-radius: var(--radius-card);
   min-width: 0;
 }
@@ -882,11 +889,11 @@ body {
 .contact-top {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 }
 
 .contact-title {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 800;
   color: var(--text-dark);
 }
@@ -894,9 +901,9 @@ body {
 .contact-details {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   gap: 2px;
-  font-size: 10.5px;
+  font-size: 9.5px;
   color: #334155;
   font-weight: 500;
 }
@@ -904,13 +911,13 @@ body {
 .social-bar {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
 }
 
 .social-box {
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
   border: 1px solid #BCE3EE;
   background-color: rgba(255, 255, 255, 0.4);
   display: flex;
@@ -1313,6 +1320,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
   padding-top: 14px;
   border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
