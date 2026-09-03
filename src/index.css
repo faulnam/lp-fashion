@@ -46,7 +46,7 @@ body {
   align-items: flex-start;
   min-height: 100vh;
   margin: 0;
-  padding: 16px;
+  padding: 16px 32px;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   box-sizing: border-box;
@@ -56,7 +56,7 @@ body {
 /* --- Main Outer Page Canvas --- */
 .page-canvas {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1360px;
   margin: 0 auto;
   background-color: var(--bg-canvas);
   border-radius: var(--radius-outer);
@@ -2145,7 +2145,7 @@ body {
 /* ==========================================================================
    8. RESPONSIVE DESIGN (TABLET & MOBILE)
    ========================================================================== */
-@media (max-width: 1180px) {
+@media (max-width: 860px) {
   .bento-row {
     flex-wrap: wrap;
     height: auto !important;
