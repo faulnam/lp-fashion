@@ -45,18 +45,24 @@ body {
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
+  margin: 0;
   padding: 16px;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 /* --- Main Outer Page Canvas --- */
 .page-canvas {
   width: 100%;
   max-width: 1400px;
+  margin: 0 auto;
   background-color: var(--bg-canvas);
   border-radius: var(--radius-outer);
   padding: 16px 20px 24px 20px;
   box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+  box-sizing: border-box;
 }
 
 /* ==========================================================================
@@ -226,6 +232,12 @@ body {
   display: flex;
   gap: var(--grid-gap);
   width: 100%;
+  box-sizing: border-box;
+}
+
+.bento-row > * {
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .bento-card {
@@ -233,12 +245,21 @@ body {
   overflow: hidden;
   position: relative;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .bento-column {
   display: flex;
   flex-direction: column;
   gap: var(--grid-gap);
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.bento-column > * {
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 /* --------------------------------------------------------------------------
@@ -247,13 +268,14 @@ body {
 
 /* Card 1: Main Furniture Hero Card */
 .main-hero-card {
-  flex: 4.8;
+  flex: 4.5;
   height: 460px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 24px 28px;
   color: var(--text-white);
+  min-width: 0;
 }
 
 .hero-bg-image {
@@ -366,7 +388,7 @@ body {
 
 /* Card 2: Promo Card */
 .promo-card {
-  flex: 3.4;
+  flex: 3.5;
   height: 460px;
   background-color: var(--bg-promo-cyan);
   display: flex;
@@ -374,6 +396,7 @@ body {
   justify-content: space-between;
   padding: 24px 28px;
   text-align: left;
+  min-width: 0;
 }
 
 .promo-top-tag {
@@ -466,6 +489,7 @@ body {
 .product-column {
   flex: 2.8;
   height: 460px;
+  min-width: 0;
 }
 
 .product-card {
@@ -551,7 +575,7 @@ body {
 
 /* Card 4: Gallery Card */
 .gallery-card {
-  flex: 3.5;
+  flex: 4.5;
   height: 100%;
   position: relative;
   display: flex;
@@ -559,6 +583,7 @@ body {
   justify-content: center;
   padding: 24px 28px;
   color: var(--text-white);
+  min-width: 0;
 }
 
 .gallery-bg-image {
@@ -610,8 +635,9 @@ body {
 
 /* Card 5 Column: Branding + Testimonial Stack */
 .brand-testimonials-column {
-  flex: 3.8;
+  flex: 3.5;
   height: 100%;
+  min-width: 0;
 }
 
 .brand-banner-card {
@@ -623,20 +649,20 @@ body {
   align-items: center;
   justify-content: center;
   gap: 4px;
-  padding: 20px 24px;
+  padding: 16px 20px;
   border-radius: var(--radius-card);
 }
 
 .brand-logo-wrap {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .brand-title {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 900;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
   color: #000000;
 }
 
@@ -651,6 +677,7 @@ body {
   display: flex;
   gap: var(--grid-gap);
   height: 224px;
+  min-width: 0;
 }
 
 .testimonial-card {
@@ -659,8 +686,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 24px;
+  padding: 14px 16px;
   border-radius: var(--radius-card);
+  min-width: 0;
+  overflow: hidden;
 }
 
 .test-peach {
@@ -720,11 +749,12 @@ body {
 
 /* Card 6 & 7 Group Container */
 .feature-store-contact-group {
-  flex: 4.8;
+  flex: 2.8;
   height: 100%;
   display: flex;
   flex-direction: column;
   gap: var(--grid-gap);
+  min-width: 0;
 }
 
 /* Card 6: Feature Teal Card (Top) */
@@ -795,6 +825,7 @@ body {
   display: flex;
   gap: var(--grid-gap);
   height: 159px;
+  min-width: 0;
 }
 
 .store-finder-card {
@@ -806,12 +837,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 20px 24px;
+  gap: 8px;
+  padding: 12px 14px;
   text-align: center;
   border-radius: var(--radius-card);
   transition: transform 0.2s ease;
   cursor: pointer;
+  min-width: 0;
 }
 
 .store-finder-card:hover {
@@ -819,8 +851,8 @@ body {
 }
 
 .pin-circle {
-  width: 46px;
-  height: 46px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #000000;
   display: flex;
@@ -829,10 +861,10 @@ body {
 }
 
 .store-title {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 800;
   color: var(--text-dark);
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 .contact-card {
@@ -842,8 +874,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 24px;
+  padding: 12px 14px;
   border-radius: var(--radius-card);
+  min-width: 0;
 }
 
 .contact-top {
@@ -1167,7 +1200,7 @@ body {
 }
 
 .collection-banner-card {
-  flex: 4.8;
+  flex: 4.5;
   background-color: var(--bg-teal-card);
   color: var(--text-white);
   padding: 24px 28px;
@@ -1175,6 +1208,7 @@ body {
   flex-direction: column;
   justify-content: center;
   border-radius: var(--radius-card);
+  min-width: 0;
 }
 
 .coll-tag {
@@ -1200,13 +1234,14 @@ body {
 }
 
 .collection-theme-card {
-  flex: 5.2;
+  flex: 6.3;
   background-color: var(--bg-card-light);
   padding: 24px 28px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: var(--radius-card);
+  min-width: 0;
 }
 
 /* Row 2 Lookbook Cards */
@@ -1215,7 +1250,7 @@ body {
 }
 
 .main-lookbook-card {
-  flex: 4.8;
+  flex: 4.5;
   height: 100%;
   position: relative;
   display: flex;
@@ -1223,6 +1258,7 @@ body {
   justify-content: space-between;
   padding: 24px 28px;
   color: var(--text-white);
+  min-width: 0;
 }
 
 .lookbook-bg-image {
@@ -1305,7 +1341,7 @@ body {
 }
 
 .promo-lookbook-card {
-  flex: 3.4;
+  flex: 3.5;
   height: 100%;
   background-color: var(--bg-promo-cyan);
   display: flex;
@@ -1313,11 +1349,13 @@ body {
   justify-content: space-between;
   padding: 24px 28px;
   border-radius: var(--radius-card);
+  min-width: 0;
 }
 
 .compact-series-column {
   flex: 2.8;
   height: 100%;
+  min-width: 0;
 }
 
 .compact-subcard {
@@ -2107,7 +2145,7 @@ body {
 /* ==========================================================================
    8. RESPONSIVE DESIGN (TABLET & MOBILE)
    ========================================================================== */
-@media (max-width: 1100px) {
+@media (max-width: 1180px) {
   .bento-row {
     flex-wrap: wrap;
     height: auto !important;
