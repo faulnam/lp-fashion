@@ -14,7 +14,7 @@ export default function Navbar({ activePage, setActivePage }) {
         onClick={() => setActivePage('home')}
         role="button"
         tabIndex={0}
-        aria-label="FIFA Beranda"
+        aria-label="FIFA HIJAB Beranda"
       >
         <div className="logo-mark">
           <span className="mark-bar bar-1"></span>
@@ -22,7 +22,7 @@ export default function Navbar({ activePage, setActivePage }) {
           <span className="mark-bar bar-3"></span>
           <span className="mark-bar bar-4"></span>
         </div>
-        <span className="logo-text">FIFA</span>
+        <span className="logo-text">FIFA HIJAB</span>
       </div>
 
       {/* Nav Menu */}

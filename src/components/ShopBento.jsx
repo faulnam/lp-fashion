@@ -76,18 +76,18 @@ export default function ShopBento({ initialSearchQuery = '' }) {
         {/* CARD A: Shop Main Banner */}
         <div className="bento-card shop-banner-card">
           <div className="shop-banner-content">
-            <h1 className="shop-banner-title">Katalog Furnitur FIFA</h1>
+            <h1 className="shop-banner-title">Katalog Fashion Hijab FIFA</h1>
             <p className="shop-banner-subtitle">
-              Temukan koleksi furnitur impian dengan keanggunan, kenyamanan, dan kualitas terbaik.
+              Temukan koleksi hijab, pashmina, abaya, dan modest wear pilihan berkualitas tinggi.
             </p>
             <div className="search-bar shop-search-bar">
-              <svg className="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748B" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <svg className="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A7067" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="11" cy="11" r="8" />
                 <line x1="21" y1="21" x2="16.65" y2="16.65" />
               </svg>
               <input 
                 type="text" 
-                placeholder="Cari barang atau nama furnitur..." 
+                placeholder="Cari hijab, pashmina, abaya, tunik..." 
                 value={searchQuery}
                 onChange={handleSearchChange}
               />
@@ -97,7 +97,7 @@ export default function ShopBento({ initialSearchQuery = '' }) {
 
         {/* CARD B: Category Filters Card */}
         <div className="bento-card category-filter-card">
-          <h2 className="filter-card-title">Kategori Produk</h2>
+          <h2 className="filter-card-title">Kategori Busana</h2>
           <div className="category-pills">
             {CATEGORIES.map(category => (
               <button
@@ -116,7 +116,7 @@ export default function ShopBento({ initialSearchQuery = '' }) {
         <div className="bento-card shop-promo-card">
           <span className="shop-promo-tag">PROMO SPESIAL</span>
           <h3 className="shop-promo-title">Diskon Akhir Pekan Hingga 20%</h3>
-          <span className="shop-promo-code">Kode: <strong>FIFA20</strong></span>
+          <span className="shop-promo-code">Kode: <strong>FIFAHIJAB20</strong></span>
         </div>
 
       </div>

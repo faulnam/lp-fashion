@@ -26,11 +26,11 @@ export default function WishlistDrawer({ setActivePage }) {
         {/* Header */}
         <div className="cart-drawer-header">
           <div className="cart-header-title">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="#D76B52" stroke="#D76B52" strokeWidth="2">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#9D5C4D" stroke="#9D5C4D" strokeWidth="2">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.78-8.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
             </svg>
             <h2>Favorit Saya</h2>
-            <span className="cart-count-tag" style={{ background: 'rgba(215, 107, 82, 0.1)', color: '#D76B52' }}>
+            <span className="cart-count-tag" style={{ background: 'rgba(157, 92, 77, 0.1)', color: '#9D5C4D' }}>
               {wishlist.length} Disimpan
             </span>
           </div>
@@ -50,7 +50,7 @@ export default function WishlistDrawer({ setActivePage }) {
             <div className="cart-empty-state">
               <div className="empty-icon">❤️</div>
               <h3>Belum Ada Produk Favorit</h3>
-              <p>Klik ikon hati (❤️) pada katalog furnitur untuk menyimpan barang yang Anda sukai ke daftar ini.</p>
+              <p>Klik ikon hati pada katalog busana untuk menyimpan barang yang Anda sukai ke daftar ini.</p>
               <button 
                 type="button" 
                 className="shop-now-btn" 
@@ -60,7 +60,7 @@ export default function WishlistDrawer({ setActivePage }) {
                   setActivePage('shop');
                 }}
               >
-                Jelajahi Toko FIFA
+                Jelajahi Katalog Hijab
               </button>
             </div>
           ) : (
@@ -75,7 +75,7 @@ export default function WishlistDrawer({ setActivePage }) {
                     />
                   </div>
                   <div className="cart-item-info">
-                    <span className="cart-item-cat">{item.category || 'Furnitur'}</span>
+                    <span className="cart-item-cat">{item.category || 'Modest Wear'}</span>
                     <h4 className="cart-item-name">{item.name}</h4>
                     <span className="cart-item-price">{item.price}</span>
                     <div style={{ marginTop: '6px' }}>
@@ -94,7 +94,7 @@ export default function WishlistDrawer({ setActivePage }) {
                     onClick={() => handleRemove(item)}
                     aria-label="Hapus dari favorit"
                   >
-                    🗑️
+                    ✕
                   </button>
                 </div>
               ))}
@@ -106,15 +106,14 @@ export default function WishlistDrawer({ setActivePage }) {
         {wishlist.length > 0 && (
           <div className="cart-drawer-footer">
             <button 
-              type="button"
+              type="button" 
               className="checkout-btn"
-              style={{ background: 'var(--accent-terracotta)' }}
               onClick={() => {
                 setIsWishlistOpen(false);
                 setActivePage('shop');
               }}
             >
-              Lanjut Cari Furnitur Lain &rarr;
+              Lihat Katalog Lengkap &rarr;
             </button>
           </div>
         )}

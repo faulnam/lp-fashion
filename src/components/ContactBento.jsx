@@ -4,7 +4,7 @@ import { useToast } from '../context/ToastContext';
 export default function ContactBento() {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
-  const [topic, setTopic] = useState('Sofa & Ruang Tamu');
+  const [topic, setTopic] = useState('Hijab Segiempat & Pashmina');
   const [notes, setNotes] = useState('');
   const { addToast } = useToast();
 
@@ -16,17 +16,17 @@ export default function ContactBento() {
     }
 
     const waNumber = '628123808394';
-    let text = `Halo FIFA Furniture, saya ingin konsultasi interior:\n\n`;
+    let text = `Halo FIFA Hijab, saya ingin konsultasi busana / pemesanan:\n\n`;
     text += `👤 *Nama:* ${name}\n`;
     text += `📱 *No. WhatsApp:* ${phone}\n`;
-    text += `🛋️ *Kebutuhan:* ${topic}\n`;
+    text += `🧕 *Kebutuhan:* ${topic}\n`;
     if (notes) {
       text += `📝 *Catatan:* ${notes}\n`;
     }
-    text += `\nMohon informasi ketersediaan produk & jadwal showroom. Terima kasih!`;
+    text += `\nMohon informasi ketersediaan stok & panduan ukuran. Terima kasih!`;
 
     const waUrl = `https://api.whatsapp.com/send?phone=${waNumber}&text=${encodeURIComponent(text)}`;
-    addToast('Mengarahkan ke WhatsApp CS FIFA...', 'info');
+    addToast('Mengarahkan ke WhatsApp CS FIFA Hijab...', 'info');
     window.open(waUrl, '_blank');
   };
 
@@ -39,13 +39,13 @@ export default function ContactBento() {
         {/* CARD 1: Main Contact Banner */}
         <div className="bento-card contact-hero-card" style={{ flex: '4.8', padding: '28px 32px' }}>
           <span className="coll-tag">LAYANAN & KONSULTASI</span>
-          <h1 className="contact-main-title">Pusat Layanan & Kontak Resmi FIFA</h1>
+          <h1 className="contact-main-title">Pusat Layanan & Butik Resmi FIFA Hijab</h1>
           <p className="contact-main-subtitle">
-            Konsultasikan ukuran ruang, pilihan warna kain, atau jadwalkan kunjungan ke showroom bersama konsultan kami.
+            Konsultasikan panduan ukuran abaya, pilihan warna pashmina, atau pemesanan seragam bridesmaid bersama stylist kami.
           </p>
           <div style={{ marginTop: '16px' }}>
             <a 
-              href="https://api.whatsapp.com/send?phone=628123808394&text=Halo%20FIFA%20Furniture,%20saya%20ingin%20tanya%20produk." 
+              href="https://api.whatsapp.com/send?phone=628123808394&text=Halo%20FIFA%20Hijab,%20saya%20ingin%20tanya%20produk." 
               target="_blank" 
               rel="noreferrer" 
               className="wa-pill-btn"
@@ -64,39 +64,39 @@ export default function ContactBento() {
           <div className="channels-list">
             <div className="channel-item">
               <div className="channel-icon-svg">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D76B52" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9D5C4D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
               </div>
               <div className="channel-text">
-                <span className="ch-label">Telepon Showroom</span>
+                <span className="ch-label">Telepon Butik</span>
                 <strong>(021) 380-8394</strong>
               </div>
             </div>
 
             <div className="channel-item">
               <div className="channel-icon-svg">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D76B52" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9D5C4D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                   <polyline points="22,6 12,13 2,6" />
                 </svg>
               </div>
               <div className="channel-text">
                 <span className="ch-label">Email Resmi</span>
-                <strong>fifafurniture@gmail.com</strong>
+                <strong>cs@fifahijab.com</strong>
               </div>
             </div>
 
             <div className="channel-item">
               <div className="channel-icon-svg">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D76B52" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9D5C4D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
               </div>
               <div className="channel-text">
                 <span className="ch-label">Head Office</span>
-                <strong>Kawasan Senopati, Jakarta</strong>
+                <strong>Kawasan Senopati, Jakarta Selatan</strong>
               </div>
             </div>
           </div>
@@ -131,53 +131,60 @@ export default function ContactBento() {
           <div className="form-card-header">
             <span className="coll-tag" style={{ color: 'var(--accent-terracotta)' }}>FORMULIR KONSULTASI</span>
             <h2 style={{ fontSize: '20px', fontWeight: '800', color: 'var(--text-dark)', marginTop: '2px' }}>
-              Konsultasi Furnitur & Janji Temu
+              Konsultasi Busana & Janji Temu Butik
             </h2>
-            <p style={{ fontSize: '12.5px', color: '#64748B', marginTop: '2px' }}>
-              Isi formulir berikut untuk terhubung langsung dengan konsultan interior FIFA.
+            <p style={{ fontSize: '12.5px', color: '#7A7067', marginTop: '2px' }}>
+              Isi formulir berikut untuk terhubung langsung dengan fashion consultant FIFA Hijab.
             </p>
           </div>
 
           <form className="custom-contact-form" onSubmit={handleSubmit}>
             <div className="form-grid-2">
               <div className="form-group">
-                <label>Nama Lengkap *</label>
+                <label htmlFor="input-name">Nama Lengkap</label>
                 <input 
                   type="text" 
-                  placeholder="Contoh: Nadia Putri" 
+                  id="input-name" 
+                  placeholder="Contoh: Fatimah Zahra" 
                   value={name} 
-                  onChange={(e) => setName(e.target.value)} 
+                  onChange={(e) => setName(e.target.value)}
                   required 
                 />
               </div>
               <div className="form-group">
-                <label>Nomor WhatsApp *</label>
+                <label htmlFor="input-phone">Nomor WhatsApp</label>
                 <input 
                   type="tel" 
-                  placeholder="0812xxxxxxxx" 
+                  id="input-phone" 
+                  placeholder="Contoh: 08123456789" 
                   value={phone} 
-                  onChange={(e) => setPhone(e.target.value)} 
+                  onChange={(e) => setPhone(e.target.value)}
                   required 
                 />
               </div>
             </div>
 
             <div className="form-group">
-              <label>Kategori Minat</label>
-              <select value={topic} onChange={(e) => setTopic(e.target.value)}>
-                <option value="Sofa & Ruang Tamu">Sofa & Set Ruang Tamu</option>
-                <option value="Set Meja Makan">Set Meja Makan Solid</option>
-                <option value="Kursi Santai & Armchair">Kursi Santai & Armchair</option>
-                <option value="Paket Lengkap Hunian">Paket Lengkap Rumah / Apartemen</option>
-                <option value="Kustomisasi Ukuran">Kustomisasi Ukuran & Kain Khusus</option>
+              <label htmlFor="select-topic">Kebutuhan Busana</label>
+              <select 
+                id="select-topic" 
+                value={topic} 
+                onChange={(e) => setTopic(e.target.value)}
+              >
+                <option value="Hijab Segiempat & Pashmina">Hijab Segiempat & Pashmina</option>
+                <option value="Abaya & Gamis Syar'i">Abaya & Gamis Syar'i</option>
+                <option value="Set OOTD & Outer Modest">Set OOTD & Outer Modest</option>
+                <option value="Pemesanan Seragam / Bridesmaid">Pemesanan Seragam / Bridesmaid</option>
+                <option value="Konsultasi Mix & Match Busana">Konsultasi Mix & Match Busana</option>
               </select>
             </div>
 
             <div className="form-group">
-              <label>Pesan / Pertanyaan (Opsional)</label>
+              <label htmlFor="input-notes">Catatan Tambahan (Opsional)</label>
               <textarea 
-                rows="2" 
-                placeholder="Tuliskan gambaran ruangan atau kebutuhan furnitur Anda..." 
+                id="input-notes" 
+                rows="3" 
+                placeholder="Tuliskan ukuran, preferensi warna, atau kebutuhan busana Anda..." 
                 value={notes} 
                 onChange={(e) => setNotes(e.target.value)}
               />
@@ -192,16 +199,16 @@ export default function ContactBento() {
         {/* Showrooms Card */}
         <div className="bento-card contact-showrooms-card" style={{ flex: '5.2', padding: '28px 32px' }}>
           <div className="showrooms-header">
-            <span className="coll-tag" style={{ color: '#D0ECF2' }}>LOKASI GALERI</span>
+            <span className="coll-tag" style={{ color: '#D0ECF2' }}>LOKASI BUTIK</span>
             <h2 style={{ fontSize: '20px', fontWeight: '800', color: '#FFFFFF', marginTop: '2px' }}>
-              Showroom & Toko Terdekat
+              Butik Resmi & Offline Store
             </h2>
           </div>
 
           <div className="showrooms-grid-list">
             <div className="showroom-item-box">
               <div className="showroom-top">
-                <strong>FIFA Flagship Store Senopati</strong>
+                <strong>FIFA Hijab Flagship Butik Senopati</strong>
                 <span className="store-status open">Buka</span>
               </div>
               <p>Jl. Senopati No. 45, Kebayoran Baru, Jakarta Selatan</p>
@@ -210,16 +217,16 @@ export default function ContactBento() {
 
             <div className="showroom-item-box">
               <div className="showroom-top">
-                <strong>FIFA Experience Center BSD</strong>
+                <strong>FIFA Hijab Boutique Bandung</strong>
                 <span className="store-status open">Buka</span>
               </div>
-              <p>Green Office Park 6, BSD City, Tangerang Selatan</p>
-              <small>10:00 - 22:00 WIB • (021) 534-8890</small>
+              <p>Jl. R.E. Martadinata No. 88, Citarum, Bandung</p>
+              <small>10:00 - 22:00 WIB • (022) 420-5512</small>
             </div>
 
             <div className="showroom-item-box">
               <div className="showroom-top">
-                <strong>FIFA Gallery Surabaya</strong>
+                <strong>FIFA Hijab Gallery Surabaya</strong>
                 <span className="store-status open">Buka</span>
               </div>
               <p>Pakuwon Mall Level 2 No. 48, Surabaya Barat</p>

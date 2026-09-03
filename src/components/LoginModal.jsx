@@ -17,9 +17,9 @@ export default function LoginModal({ isOpen, onClose }) {
       return;
     }
     if (isRegister) {
-      addToast(`Selamat datang ${name || 'Pengguna'}! Pendaftaran berhasil 🎉`, 'info');
+      addToast(`Selamat datang ${name || 'Pelanggan'}! Pendaftaran berhasil.`, 'info');
     } else {
-      addToast(`Selamat datang kembali di FIFA! ✨`, 'info');
+      addToast(`Selamat datang kembali di FIFA Hijab!`, 'info');
     }
     onClose();
   };
@@ -45,16 +45,16 @@ export default function LoginModal({ isOpen, onClose }) {
             <span className="mark-bar bar-3"></span>
             <span className="mark-bar bar-4"></span>
           </div>
-          <span className="logo-text">FIFA</span>
+          <span className="logo-text">FIFA HIJAB</span>
         </div>
 
         <h3 className="auth-title">
-          {isRegister ? 'Buat Akun FIFA Baru' : 'Masuk ke Akun FIFA'}
+          {isRegister ? 'Buat Akun FIFA Hijab Baru' : 'Masuk ke Akun FIFA Hijab'}
         </h3>
         <p className="auth-subtitle">
           {isRegister
-            ? 'Dapatkan penawaran eksklusif dan kemudahan melacak pesanan furnitur Anda.'
-            : 'Akses wishlist favorit dan riwayat belanja furnitur modern Anda.'}
+            ? 'Dapatkan penawaran eksklusif dan kemudahan melacak pesanan busana hijab Anda.'
+            : 'Akses wishlist favorit dan riwayat belanja modest wear Anda.'}
         </p>
 
         <form className="auth-form" onSubmit={handleSubmit}>
@@ -64,7 +64,7 @@ export default function LoginModal({ isOpen, onClose }) {
               <input
                 id="auth-name"
                 type="text"
-                placeholder="Contoh: Nadia Putri"
+                placeholder="Nama Anda"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
@@ -77,7 +77,7 @@ export default function LoginModal({ isOpen, onClose }) {
             <input
               id="auth-email"
               type="email"
-              placeholder="nama@email.com"
+              placeholder="email@anda.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -97,17 +97,17 @@ export default function LoginModal({ isOpen, onClose }) {
           </div>
 
           <button type="submit" className="auth-submit-btn">
-            {isRegister ? 'Daftar Sekarang' : 'Masuk ke Akun'}
+            {isRegister ? 'Daftar Sekarang' : 'Masuk'}
           </button>
         </form>
 
-        <div className="auth-switch">
+        <div className="auth-toggle">
           <span>
-            {isRegister ? 'Sudah memiliki akun?' : 'Belum memiliki akun FIFA?'}
-          </span>{' '}
-          <button 
-            type="button" 
-            className="switch-btn"
+            {isRegister ? 'Sudah punya akun FIFA Hijab?' : 'Belum memiliki akun?'}
+          </span>
+          <button
+            type="button"
+            className="toggle-link"
             onClick={() => setIsRegister(!isRegister)}
           >
             {isRegister ? 'Masuk di sini' : 'Daftar sekarang'}

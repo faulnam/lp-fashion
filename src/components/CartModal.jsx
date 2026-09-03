@@ -12,17 +12,17 @@ export default function CartModal() {
   const handleWhatsAppCheckout = () => {
     if (cartItems.length === 0) return;
 
-    // Nomor WhatsApp Admin FIFA Furniture
+    // Nomor WhatsApp Admin FIFA Hijab
     const waNumber = '628123808394';
 
     // Susun pesan format pemesanan yang rapi
-    let message = `Halo Admin *FIFA Furniture*, saya ingin melakukan pemesanan furnitur berikut:\n\n`;
+    let message = `Halo Admin *FIFA Hijab*, saya ingin melakukan pemesanan busana / hijab berikut:\n\n`;
     message += `📋 *RINCIAN PESANAN:*\n`;
 
     cartItems.forEach((item, index) => {
       const itemSubtotal = (item.numericPrice || 0) * (item.quantity || 1);
       message += `${index + 1}. *${item.name}*\n`;
-      message += `   - Jumlah: ${item.quantity || 1} unit\n`;
+      message += `   - Jumlah: ${item.quantity || 1} pcs\n`;
       message += `   - Harga: ${formatRupiah(itemSubtotal)}\n\n`;
     });
 
@@ -46,7 +46,7 @@ export default function CartModal() {
         {/* Header */}
         <div className="cart-drawer-header">
           <div className="cart-header-title">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F172A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1F1B18" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
               <line x1="3" y1="6" x2="21" y2="6" />
               <path d="M16 10a4 4 0 0 1-8 0" />
@@ -70,7 +70,7 @@ export default function CartModal() {
             <div className="cart-empty-state">
               <div className="empty-icon">🛒</div>
               <h3>Keranjang Masih Kosong</h3>
-              <p>Tambahkan furnitur impian Anda dengan menekan tombol (+) pada katalog produk.</p>
+              <p>Tambahkan busana muslimah & hijab impian Anda dengan menekan tombol (+) pada katalog produk.</p>
               <button 
                 type="button" 
                 className="shop-now-btn" 
@@ -94,7 +94,7 @@ export default function CartModal() {
                       />
                     </div>
                     <div className="cart-item-info">
-                      <span className="cart-item-cat">{item.category || 'Furnitur'}</span>
+                      <span className="cart-item-cat">{item.category || 'Modest Wear'}</span>
                       <h4 className="cart-item-name">{item.name}</h4>
                       <span className="cart-item-price">{formatRupiah(itemTotal)}</span>
                       <div className="cart-qty-controls">
@@ -123,7 +123,7 @@ export default function CartModal() {
                       onClick={() => removeFromCart(item.id)}
                       aria-label="Hapus dari keranjang"
                     >
-                      🗑️
+                      ✕
                     </button>
                   </div>
                 );

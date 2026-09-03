@@ -4,13 +4,13 @@ import { useCart } from '../context/CartContext';
 import { useToast } from '../context/ToastContext';
 
 export default function CollectionBento({ setActivePage }) {
-  const [currentTheme, setCurrentTheme] = useState('Semua Tema');
+  const [currentTheme, setCurrentTheme] = useState('Semua Gaya');
   const { addToCart } = useCart();
   const { addToast } = useToast();
 
   const filteredBundles = useMemo(() => {
     return BUNDLE_SETS.filter(item => {
-      if (currentTheme === 'Semua Tema') return true;
+      if (currentTheme === 'Semua Gaya') return true;
       return item.theme.toLowerCase() === currentTheme.toLowerCase();
     });
   }, [currentTheme]);
@@ -36,15 +36,15 @@ export default function CollectionBento({ setActivePage }) {
         {/* CARD A: Collection Hero Banner */}
         <div className="bento-card collection-banner-card">
           <span className="coll-tag">LOOKBOOK & INSPIRASI</span>
-          <h1 className="collection-title">Koleksi Tema Interior FIFA</h1>
+          <h1 className="collection-title">Koleksi OOTD Modest FIFA</h1>
           <p className="collection-subtitle">
-            Jelajahi paduan furnitur siap pakai yang dirancang oleh desainer interior profesional.
+            Jelajahi paduan gaya busana muslimah & hijab serasi yang dirancang oleh fashion stylist profesional.
           </p>
         </div>
 
         {/* CARD B: Theme Filter Pills */}
         <div className="bento-card collection-theme-card">
-          <h2 className="filter-card-title">Gaya & Tema Interior</h2>
+          <h2 className="filter-card-title">Tema Gaya & OOTD</h2>
           <div className="category-pills">
             {THEMES.map(theme => (
               <button
@@ -64,21 +64,21 @@ export default function CollectionBento({ setActivePage }) {
       {/* BENTO ROW 2: FEATURED LOOKBOOK BENTO CARDS */}
       <div className="bento-row collection-row-2">
         
-        {/* Card 1: Featured Dining Lookbook */}
+        {/* Card 1: Featured Scarf Lookbook */}
         <div className="bento-card main-lookbook-card">
           <div className="lookbook-bg-image" style={{ backgroundImage: "url('assets/dining_room.png')" }}></div>
           <div className="lookbook-overlay"></div>
           <span className="look-badge">Koleksi Unggulan</span>
           <div className="lookbook-content">
-            <h2 className="lookbook-title">Set Ruang Makan Skandinavia</h2>
+            <h2 className="lookbook-title">Koleksi Voal & Silk Earth Series</h2>
             <p className="lookbook-desc">
-              Paduan kayu solid alami, kursi upholstered lembut, dan pencahayaan hangat.
+              Paduan hijab voal ultrafine, silk shawl lembut bernuansa terakota dan olive hangat.
             </p>
             <div className="lookbook-bottom-bar">
               <div className="look-price-group">
-                <span className="look-price-label">Paket 1 Set (4 Barang)</span>
+                <span className="look-price-label">Paket 1 Set (4 Pcs Scarf)</span>
                 <span className="look-price-val">
-                  Rp 11.590.000 <span className="old-price">Rp 13.990.000</span>
+                  Rp 299.000 <span className="old-price">Rp 380.000</span>
                 </span>
               </div>
               <button 
@@ -92,19 +92,19 @@ export default function CollectionBento({ setActivePage }) {
           </div>
         </div>
 
-        {/* Card 2: Living Room Comfort Bundle */}
+        {/* Card 2: Modern Modest Outfit */}
         <div className="bento-card promo-lookbook-card">
-          <span className="promo-top-tag">SERI RUANG TAMU</span>
+          <span className="promo-top-tag">LOOKBOOK BUTIK</span>
           <div className="promo-img-wrapper">
             <img 
               src="assets/promo_armchair.png" 
-              alt="Ruang Tamu Modern Comfort" 
+              alt="Modern Modest Outfit" 
               className="promo-img transparent-bg-img" 
             />
           </div>
           <div className="promo-bottom">
-            <h3 className="promo-title">Modern Comfort Living</h3>
-            <p className="promo-desc">Kombinasi sofa 3-dudukan & armchair tufted khaki.</p>
+            <h3 className="promo-title">Modern Modest Blazer & Scarf</h3>
+            <p className="promo-desc">Kombinasi blazer santai, trouser rapi & pashmina silk shimmer yang memikat.</p>
             <div 
               className="promo-cta"
               onClick={() => setActivePage('shop')}
@@ -113,9 +113,9 @@ export default function CollectionBento({ setActivePage }) {
             >
               <span className="cta-pill-text">Shop the Look</span>
               <div className="cta-circle-arrow">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
+                  <polyline points="7 7 17 7 17" />
                 </svg>
               </div>
             </div>
@@ -125,14 +125,14 @@ export default function CollectionBento({ setActivePage }) {
         {/* Card 3: Compact Series Stack */}
         <div className="bento-column compact-series-column">
           <div className="bento-card compact-subcard">
-            <span className="compact-tag">COMPACT LIVING</span>
-            <h4 className="compact-title">Sudut Santai Minimalis</h4>
-            <span className="compact-price">Bundel Rp 6.190.000</span>
+            <span className="compact-tag">DAILY ESSENTIALS</span>
+            <h4 className="compact-title">Set Daily Voal & Inner Ciput</h4>
+            <span className="compact-price">Bundel Rp 169.000</span>
           </div>
           <div className="bento-card compact-subcard compact-peach">
-            <span className="compact-tag">APARTMENT SERIES</span>
-            <h4 className="compact-title">Kamar Tidur Japandi</h4>
-            <span className="compact-price">Bundel Rp 9.750.000</span>
+            <span className="compact-tag">SIGNATURE SERIES</span>
+            <h4 className="compact-title">Soft Blush Silk & Abaya Chic</h4>
+            <span className="compact-price">Bundel Rp 499.000</span>
           </div>
         </div>
 
@@ -140,22 +140,22 @@ export default function CollectionBento({ setActivePage }) {
 
       {/* BENTO ROW 3: BUNDLE SETS CATALOGUE GRID */}
       <div className="collection-bundles-section">
-        <h2 className="section-title">Paket Bundel Ruangan ("Shop the Look")</h2>
+        <h2 className="section-title">Paket Bundel Hemat OOTD Lengkap</h2>
         <div className="shop-products-grid bundle-grid">
           {filteredBundles.length === 0 ? (
             <div style={{
               gridColumn: '1 / -1',
               textAlign: 'center',
               padding: '48px 20px',
-              backgroundColor: '#EBF5F9',
+              backgroundColor: '#FAF4EE',
               borderRadius: '20px',
               animation: 'fadeIn 0.3s ease'
             }}>
-              <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#0F172A', marginBottom: '8px' }}>
+              <h3 style={{ fontSize: '18px', fontWeight: '700', color: '#1F1B18', marginBottom: '8px' }}>
                 Koleksi Tema "{currentTheme}" Segera Hadir
               </h3>
-              <p style={{ fontSize: '13px', color: '#64748B' }}>
-                Pilih tema interior lain untuk melihat inspirasi paket bundel ruangan.
+              <p style={{ fontSize: '13px', color: '#7A7067' }}>
+                Pilih tema gaya lain untuk melihat inspirasi paket OOTD hemat.
               </p>
             </div>
           ) : (
@@ -175,7 +175,7 @@ export default function CollectionBento({ setActivePage }) {
                   />
                 </div>
                 <div className="bundle-details">
-                  <div style={{ fontSize: '10.5px', fontWeight: '700', color: '#64748B', marginBottom: '2px' }}>
+                  <div style={{ fontSize: '10.5px', fontWeight: '700', color: '#7A7067', marginBottom: '2px' }}>
                     TEMA: {bundle.theme.toUpperCase()}
                   </div>
                   <h3 className="bundle-name">{bundle.name}</h3>

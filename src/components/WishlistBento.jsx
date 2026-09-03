@@ -41,7 +41,7 @@ export default function WishlistBento({ setActivePage }) {
               </span>
             </div>
             <p className="wishlist-subtitle">
-              Produk-produk furnitur impian yang Anda simpan untuk dibeli nanti.
+              Koleksi busana muslimah dan hijab favorit yang Anda simpan untuk dibeli nanti.
             </p>
           </div>
           <div className="wishlist-actions">
@@ -63,24 +63,24 @@ export default function WishlistBento({ setActivePage }) {
             gridColumn: '1 / -1',
             textAlign: 'center',
             padding: '60px 24px',
-            background: '#EBF5F9',
+            background: '#FAF4EE',
             borderRadius: '20px',
             animation: 'fadeIn 0.3s ease'
           }}>
             <div style={{ fontSize: '48px', marginBottom: '12px' }}>❤️</div>
-            <h2 style={{ fontSize: '20px', fontWeight: '800', color: '#0F172A', marginBottom: '8px' }}>
+            <h2 style={{ fontSize: '20px', fontWeight: '800', color: '#1F1B18', marginBottom: '8px' }}>
               Belum Ada Produk Favorit
             </h2>
             <p style={{
               fontSize: '13.5px',
-              color: '#64748B',
+              color: '#7A7067',
               marginBottom: '24px',
               maxWidth: '420px',
               marginLeft: 'auto',
               marginRight: 'auto',
               lineHeight: 1.5
             }}>
-              Klik ikon hati (❤️) pada produk di Toko FIFA untuk menyimpannya di sini.
+              Klik ikon hati (❤️) pada produk di Katalog FIFA Hijab untuk menyimpannya di sini.
             </p>
             <button 
               type="button"
@@ -88,7 +88,7 @@ export default function WishlistBento({ setActivePage }) {
               style={{ display: 'inline-flex' }}
               onClick={() => setActivePage('shop')}
             >
-              Jelajahi Toko FIFA
+              Jelajahi Katalog Hijab
             </button>
           </div>
         ) : (
@@ -129,9 +129,9 @@ export default function WishlistBento({ setActivePage }) {
                 <div className="product-info">
                   <div className="product-text">
                     <div className="product-meta">
-                      <span className="rating">⭐ {item.rating || '4.9'}</span>
+                      <span className="rating">★ {item.rating || '4.9'}</span>
                       <span className="dot">•</span>
-                      <span className="cat">{item.category || 'Furnitur'}</span>
+                      <span className="cat">{item.category || 'Modest Wear'}</span>
                     </div>
                     <h3 className="product-name">{item.name}</h3>
                     <span className="product-price">{item.price}</span>
