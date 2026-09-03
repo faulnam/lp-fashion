@@ -72,7 +72,7 @@ export default function AboutBento({ setActivePage }) {
         {/* CARD 3: 2 Stacked Value Cards */}
         <div className="bento-column product-column">
           {/* Card 3a: Sustainable */}
-          <div className="bento-card product-card" style={{ padding: '22px 20px', justifyContent: 'center', gap: '8px' }}>
+          <div className="bento-card product-card" style={{ padding: '24px 28px', justifyContent: 'center', gap: '8px' }}>
             <span className="compact-tag">SERAT ALAMI SEJUK</span>
             <h3 className="product-name" style={{ fontSize: '16px', fontWeight: '800', color: 'var(--text-dark)' }}>
               Breathable Cotton & Voal
@@ -83,7 +83,7 @@ export default function AboutBento({ setActivePage }) {
           </div>
 
           {/* Card 3b: Warranty / QC */}
-          <div className="bento-card product-card" style={{ background: 'var(--bg-peach-test)', padding: '22px 20px', justifyContent: 'center', gap: '8px' }}>
+          <div className="bento-card product-card" style={{ background: 'var(--bg-peach-test)', padding: '24px 28px', justifyContent: 'center', gap: '8px' }}>
             <span className="compact-tag" style={{ color: 'var(--accent-terracotta)' }}>JAMINAN MUTU</span>
             <h3 className="product-name" style={{ fontSize: '16px', fontWeight: '800', color: 'var(--text-dark)' }}>
               Garansi Kerapian Butik
@@ -100,7 +100,7 @@ export default function AboutBento({ setActivePage }) {
       <div className="bento-row row-2" style={{ height: 'auto', minHeight: '340px' }}>
 
         {/* CARD 4: 4 Pillars of FIFA HIJAB */}
-        <div className="bento-card" style={{ flex: '6.8', background: 'var(--bg-card-light)', padding: '28px 32px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+        <div className="bento-card" style={{ flex: '6.8', background: 'var(--bg-card-light)', padding: '24px 28px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
           <span className="coll-tag" style={{ color: 'var(--accent-terracotta)', marginBottom: '4px' }}>KEUNGGULAN UTAMA</span>
           <h2 style={{ fontSize: '22px', fontWeight: '800', color: 'var(--text-dark)', marginBottom: '18px' }}>
             Standar Kualitas Tertinggi di Setiap Helai Busana
@@ -166,7 +166,7 @@ export default function AboutBento({ setActivePage }) {
         </div>
 
         {/* CARD 5: Teal CTA Card */}
-        <div className="bento-card feature-teal-card" style={{ flex: '5.2', height: 'auto', minHeight: '340px', padding: '32px' }}>
+        <div className="bento-card feature-teal-card" style={{ flex: '5.2', height: 'auto', minHeight: '340px', padding: '24px 28px' }}>
           <div className="teal-content" style={{ textAlign: 'left', alignItems: 'flex-start' }}>
             <span className="coll-tag" style={{ color: '#D0ECF2' }}>MULAI BELANJA</span>
             <h2 className="teal-title" style={{ fontSize: '26px', textAlign: 'left', marginTop: '4px' }}>

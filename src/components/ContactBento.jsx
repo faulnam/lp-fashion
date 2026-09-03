@@ -37,7 +37,7 @@ export default function ContactBento() {
       <div className="bento-row row-1" style={{ height: 'auto', minHeight: '230px' }}>
 
         {/* CARD 1: Main Contact Banner */}
-        <div className="bento-card contact-hero-card" style={{ flex: '4.8', padding: '28px 32px' }}>
+        <div className="bento-card contact-hero-card" style={{ flex: '4.8', padding: '24px 28px' }}>
           <span className="coll-tag">LAYANAN & KONSULTASI</span>
           <h1 className="contact-main-title">Pusat Layanan & Butik Resmi FIFA Hijab</h1>
           <p className="contact-main-subtitle">
@@ -59,7 +59,7 @@ export default function ContactBento() {
         </div>
 
         {/* CARD 2: Quick Channels */}
-        <div className="bento-card contact-channels-card" style={{ flex: '3.4', padding: '22px 24px' }}>
+        <div className="bento-card contact-channels-card" style={{ flex: '3.4', padding: '24px 28px' }}>
           <h3 className="channels-title">Kontak Langsung</h3>
           <div className="channels-list">
             <div className="channel-item">
@@ -103,7 +103,7 @@ export default function ContactBento() {
         </div>
 
         {/* CARD 3: Operational Hours */}
-        <div className="bento-card contact-hours-card" style={{ flex: '2.8', padding: '22px 24px' }}>
+        <div className="bento-card contact-hours-card" style={{ flex: '2.8', padding: '24px 28px' }}>
           <span className="promo-top-tag">JAM OPERASIONAL</span>
           <div className="hours-box">
             <div className="hours-row">
@@ -127,7 +127,7 @@ export default function ContactBento() {
       <div className="bento-row row-2" style={{ height: 'auto', minHeight: '380px' }}>
 
         {/* Form Card */}
-        <div className="bento-card contact-form-card" style={{ flex: '5.8', padding: '28px 32px' }}>
+        <div className="bento-card contact-form-card" style={{ flex: '5.8', padding: '24px 28px' }}>
           <div className="form-card-header">
             <span className="coll-tag" style={{ color: 'var(--accent-terracotta)' }}>FORMULIR KONSULTASI</span>
             <h2 style={{ fontSize: '20px', fontWeight: '800', color: 'var(--text-dark)', marginTop: '2px' }}>
@@ -197,7 +197,7 @@ export default function ContactBento() {
         </div>
 
         {/* Showrooms Card */}
-        <div className="bento-card contact-showrooms-card" style={{ flex: '5.2', padding: '28px 32px' }}>
+        <div className="bento-card contact-showrooms-card" style={{ flex: '5.2', padding: '24px 28px' }}>
           <div className="showrooms-header">
             <span className="coll-tag" style={{ color: '#D0ECF2' }}>LOKASI BUTIK</span>
             <h2 style={{ fontSize: '20px', fontWeight: '800', color: '#FFFFFF', marginTop: '2px' }}>

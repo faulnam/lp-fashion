@@ -252,7 +252,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 36px;
+  padding: 24px 28px;
   color: var(--text-white);
 }
 
@@ -372,7 +372,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 24px;
+  padding: 24px 28px;
   text-align: left;
 }
 
@@ -474,8 +474,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 16px 20px;
-  border-radius: var(--radius-subcard);
+  padding: 18px;
+  border-radius: var(--radius-card);
 }
 
 .product-img-box {
@@ -557,6 +557,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 24px 28px;
   color: var(--text-white);
 }
 
@@ -622,7 +623,8 @@ body {
   align-items: center;
   justify-content: center;
   gap: 4px;
-  border-radius: var(--radius-subcard);
+  padding: 20px 24px;
+  border-radius: var(--radius-card);
 }
 
 .brand-logo-wrap {
@@ -657,8 +659,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 16px;
-  border-radius: var(--radius-subcard);
+  padding: 20px 24px;
+  border-radius: var(--radius-card);
 }
 
 .test-peach {
@@ -730,7 +732,7 @@ body {
   height: 195px;
   background-color: var(--bg-teal-card);
   color: var(--text-white);
-  padding: 20px 24px;
+  padding: 24px 28px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -805,7 +807,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 16px;
+  padding: 20px 24px;
   text-align: center;
   border-radius: var(--radius-card);
   transition: transform 0.2s ease;
@@ -840,7 +842,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 16px;
+  padding: 20px 24px;
   border-radius: var(--radius-card);
 }
 
@@ -932,7 +934,7 @@ body {
 .category-filter-card {
   flex: 3.5;
   background-color: var(--bg-card-light);
-  padding: 22px;
+  padding: 24px 28px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -980,7 +982,7 @@ body {
 .shop-promo-card {
   flex: 2.8;
   background-color: var(--bg-promo-cyan);
-  padding: 22px;
+  padding: 24px 28px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1161,14 +1163,14 @@ body {
    4. COLLECTION & LOOKBOOK PAGE STYLES (COMPLETE RESTORED)
    ========================================================================== */
 .collection-row-1 {
-  height: 190px;
+  height: 230px;
 }
 
 .collection-banner-card {
   flex: 4.8;
   background-color: var(--bg-teal-card);
   color: var(--text-white);
-  padding: 24px 32px;
+  padding: 24px 28px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1200,7 +1202,7 @@ body {
 .collection-theme-card {
   flex: 5.2;
   background-color: var(--bg-card-light);
-  padding: 24px 32px;
+  padding: 24px 28px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1219,7 +1221,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 28px;
+  padding: 24px 28px;
   color: var(--text-white);
 }
 
@@ -1309,7 +1311,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 24px;
+  padding: 24px 28px;
   border-radius: var(--radius-card);
 }
 
@@ -1322,7 +1324,7 @@ body {
   height: 202px;
   background-color: var(--bg-card-light);
   border-radius: var(--radius-card);
-  padding: 20px;
+  padding: 20px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1368,7 +1370,7 @@ body {
   height: 310px;
   background-color: var(--bg-card-light);
   border-radius: var(--radius-card);
-  padding: 16px;
+  padding: 18px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
